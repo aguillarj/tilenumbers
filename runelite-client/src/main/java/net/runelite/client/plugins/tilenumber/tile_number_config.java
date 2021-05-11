@@ -16,4 +16,12 @@ public interface tile_number_config extends Config
     {
         return "Hello";
     }
+
+    @ConfigItem(
+            position = 1,
+            keyName = "ShowTile",
+            name = " Show Tile",
+            description = "would you like to ... show tile"
+    )
+    default boolean ShowTile(){return true;}
 }
