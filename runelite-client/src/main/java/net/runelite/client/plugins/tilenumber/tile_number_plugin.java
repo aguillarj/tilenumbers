@@ -36,7 +36,7 @@ public class tile_number_plugin extends Plugin
         log.info("tilenumber stopped!");
     }
 
-    @Subscribe
+    @Subscribe // Marks a method as an even subscriber
     public void onGameStateChanged(GameStateChanged gameStateChanged)
     {
         if (gameStateChanged.getGameState() == GameState.LOGGED_IN)
